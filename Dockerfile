@@ -1,4 +1,4 @@
-FROM theia:latest
+FROM theiaide/theia:latest
 USER root
 RUN apk sudo vim alpine-sdk sudo
 RUN echo "theia ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers
