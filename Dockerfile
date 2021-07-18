@@ -1,6 +1,6 @@
 FROM theiaide/theia:latest
 USER root
-RUN apk sudo vim alpine-sdk sudo
+RUN apk add sudo vim alpine-sdk sudo
 RUN echo "theia ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers
 RUN addgroup theia abuild
 RUN mkdir -p /var/cache/distfiles
